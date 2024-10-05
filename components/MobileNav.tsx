@@ -1,4 +1,5 @@
-"use client";
+'use client'
+
 import {
   Sheet,
   SheetClose,
@@ -13,11 +14,12 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { sidebarLinks } from "@/constants";
+import Footer from "./Footer";
 
 const MobileNav = ({ user }: MobileNavProps) => {
   const pathName = usePathname();
   return (
-    <section className="w-full max-w-[264px]">
+    <section className="w-fulll max-w-[264px]">
       <Sheet>
         <SheetTrigger>
           <Image
@@ -86,7 +88,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
             </SheetClose>
 
           </div>
-            FOOTER
+           <Footer user = {user} type = "mobile"/>
         </SheetContent>
       </Sheet>
     </section>
